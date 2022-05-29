@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -39,12 +40,18 @@ p{
 
 .button{
     background-color: #cc998d;
-   border: solid white 2px;
-   font-family: 'Josefin Sans', sans-serif;
-   border-radius: 0.5rem;
-   color: #0D090A; 
-   margin: 2rem;
+    border: solid white 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 0.5rem;
+    color: #0D090A; 
+    margin: 2rem;
+    transition: all .3s linear;
 }
+
+.button:hover{
+    transform: scale(1.2, 1.2);
+}
+
 
 /* ESTILOS HEADER */
 
@@ -52,8 +59,9 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #daf7dccb; 
-    align-items: center;
+    background: linear-gradient(to bottom, #304352, #d7d2cc); 
+    opacity: 0.8; 
+    align-items: center;  
 }
 
 header picture img{
@@ -66,16 +74,30 @@ nav ul{
     justify-content: space-between;
 }
 
-nav ul li{
+nav ul li a:hover{
+    background-color: #daf7dc;
+    color: #0d090a;
+}
+
+nav ul li a{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
-    color: #0d090a;
-    padding: 1rem;
-    text-decoration-line: none;
+    color: #daf7dc;
+    padding: 1rem 2rem;
+    text-decoration-line: none; 
+    transition: all .3s ease-in-out;  
 }
 
 ul{
     list-style-type: none;
+}
+
+img {
+    transition: all .3s linear;
+}
+
+img:hover{
+    transform: scale(1.1, 1.1);
 }
 
 /* ESTILOS MAIN*/
@@ -114,6 +136,10 @@ ul{
     justify-content: center;
     margin: 1rem 1rem 2rem 1rem;
 }
+.video{
+    width: 400px;
+    height: 280px;
+}
 
 .secundario__button{
     display: flex;
@@ -130,7 +156,8 @@ footer{
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    background-color: #daf7dccb;
+    background: linear-gradient(to top, #304352, #d7d2cc);
+    opacity: 0.8; 
     
 }
 
@@ -158,10 +185,11 @@ ol{
 
 /*  GALERIA */
 
-/*img{
+section picture img{
     width: 100%;
     height: 100%;
-}*/
+}
+
 
 .galeria{
     display: grid;
@@ -169,6 +197,7 @@ ol{
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
     height: auto;
+    
 }
 
 .galeria__img:nth-of-type(1){
@@ -195,8 +224,20 @@ ol{
     grid-column: 10 / 13;
     grid-row: 2;    
 }
+.galeria__img:nth-of-type(7){
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+.galeria__img:nth-of-type(8){
+    grid-column: 4 / 10;
+    grid-row: 3;  
+}
+.galeria__img:nth-of-type(9){
+    grid-column: 10 / 13;
+    grid-row: 3;    
+}
 
-
+/* Responsive */
 
 @media screen and (max-width: 760px){
     header{
@@ -234,10 +275,10 @@ ol{
         height: 180px;
     }
 
-    /*.video{
+    .video{
         width: 100%;
         padding: 1rem;
-    }*/
+    }
 
 }
 
