@@ -1,0 +1,25 @@
+{
+  "name": "la_escuelita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloPaura/La-escuelita-de-Jorge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloPaura/La-escuelita-de-Jorge/issues"
+  },
+  "homepage": "https://github.com/PabloPaura/La-escuelita-de-Jorge#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
