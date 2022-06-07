@@ -9,58 +9,158 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./Css/index.css">
 </head>
 <body>
-    <header>
-        <picture class="animate__animated animate__pulse">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md">
+        <header class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <picture class="animate__animated animate__pulse">
             <img src="./img/Logo Jorge.svg" alt="Logo de maestro en escritorio">
         </picture>
-        <nav>
-            <ul>
-                <li> <a href="./Pages/matematica.html">Matemática</a></li>
-                <li> <a href="./Pages/lengua.html">Lengua</a></li>
-                <li> <a href="./Pages/ciencias naturales.html">Naturales</a></li>
-                <li> <a href="./Pages/galeria.html">Galería</a></li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./Pages/matematica.html">Matemática</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/lengua.html">Lengua</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/ciencias naturales.html">Naturales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/galeria.html">Galería</a>
             </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <section class="principal">
-            <div class="principal__presentacion">
-                <h1 class="animate__animated animate__bounceInLeft">La escuelita de Jorge</h1>
-                <p>Bienvenido a la escuelita de Jorge. 
-                En este sitio encontrarás tareas, actividades, videos y muchas cosas más. Podrás acompañar a Jorge en todas sus locuras y aventuras, así como a Mabel, Ramón y José Luis.
-                En la página principal encontrarás un video destacado con contenidos nuevos cada semana. También un botón que te llevará a las últimas tareas realizadas.
-                Y por supuesto, podrás registrarte y visitar todas las redes sociales donde publicaremos anécdotas y todas esas cosas divertidas que siempre le pasan a nuestro querido amigo Jorge.
-                Podrás navegar por las distintas áreas para ver contenido específico de cada una desde el menú de navegación. 
-                Esperemos que disfrutes visitándonos, ¡y que te den ganas de volver!</p>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+              </form>
+          </div>
+        </header>
+      </nav>
+      
+    <!-- Main -->
+
+    <!-- Carousel -->
+
+    <main class="main container-fluid">
+        <h1 class="text-center animate__animated animate__bounceInLeft">La escuelita de Jorge</h1>
+        <p>
+            Bienvenidos a la escuelita de Jorge. En este sitio encontrarás tareas, actividades, videos y muchas cosas más. Podrás acompañar a Jorge en todas sus locuras y aventuras, así como a Mabel, Ramón, José Luis y Alfonso Nomeimportanada. En cada sección podrás visitar y realizar las tareas correspondientes. También, al registrarte, podrás acceder a todos los contenidos nuevos que se vayan actualizando cada semana en cada área desde el menú de navegación. Esperamos que disfrutes visitándonos ¡Y que te den ganas de volver! 
+        </p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="principal__img">
-                <img src="./img/Escuelita de Jorge.jpg" alt="Dibujo de la escuelita de Jorge">
-            </div>
-        </section>
-        <section class="secundario">
-            <div class="secundario__video">
-                <h2>Video destacado</h2>
-                <p>En el video destacado de esta semana Jorge se presenta y les da la bienvenida a los chicos de 5° grado. 
-                Nos cuenta cómo vamos a trabajar, como vamos a realizar las tareas y todos los trabajos. Y, de paso cañazo, nos presenta a Mabel, Ramón y José Luis que nos acompañarán en todos los videos.</p>
-                <div>
-                <iframe class="video" src="https://www.youtube.com/embed/wAo855x2tS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/escuela_carousel.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/living_carusele.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/estudio_carousele.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <div class="secundario__button">
-                <button class="button">Últimas tareas</button>
-                <p>El botón "Últimas tareas" te va a llevar directamente a Google Classroom donde podrás consultar todas las tareas que realizamos así no te perdés de nada. ¡No te olvides de chequear que estés al día!</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+    <!-- Ribbon -->
+
+        <section id="ribbon" class="container-fluid">
+            <div id="separador" class="container w-25 pl-5 rounded-3">
+                <div class="row align-items-center">
+                    <div class="col-sm p-3 ">
+                        <img src="./img/Jorge.png" class="w-75 mx-auto d-block" alt="Jorge con guayabera">
+                    </div>
+                <div class="col-sm p-3 text-center">
+                        <h2>Bienvenidos</h2>
+                    </div>
+                </div>
             </div>
         </section>
+
+    <!-- Cards -->
+
+        <section id="noticias">
+            <div class="container-md p-5">
+                <div class="row pt-5">
+                    <h2 class="text-center pb-5">Noticias</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card card_border mb-5">
+                            <img src="./img/incendio_card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">¡Tremendo susto!</h5>
+                              <p class="card-text">Haciendo un video sobre el texto instructivo Jorge casi prende fuego toda la cocina. Por suerte, pudo comprender las instrucciones del matafuegos y solo fue un susto.</p>
+                            </div>
+                        </div>
+                        <div class="secundario__button">
+                            <button class="button">Saber más...</button>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card card_border mb-5">
+                            <img src="./img/plaza_card.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Un poco de descanso</h5>
+                              <p class="card-text">Después de unas semanas complicadas y con mucho trabajo, Jorge pudo tomarse un rato para hacer una de las cosas que más le gustan, sentarse en la plaza a tomar un café y contemplar la naturaleza.</p>
+                            </div>
+                        </div>
+                        <div class="secundario__button">
+                            <button class="button">Saber más...</button>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card card_border mb-5">
+                            <img src="./img/living_card.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Reunión de planificación</h5>
+                              <p class="card-text">Jorje y Mabel se reunieron a tomar unos mates y de paso cañazo aprovecharon la ocación para planificar próximos videos y unas cuantas sorpresas. ¡Estén atentos que se vienen muchas sorpresas!</p>
+                            </div>
+                        </div>
+                        <div class="secundario__button">
+                            <button class="button">Saber más...</button>
+                        </div>
+                    </div>
+                </div>               
+            </div>                       
+        </section>
+
+    <!-- video destacado-->
+
+        <section class="destacado">
+            <div class="container">
+                <h2 class="text-center">Video destacado</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/wAo855x2tS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+         </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <div class="redes">
             <h2 class="titulos__redes">Redes sociales</h2>
-            <img src="./img/YT.png" alt="Logo de Youtube">
-            <img src="./img/INS.png" alt="Logo de Instagram">
+            <img class="redes__img" src="./img/YT.png" alt="Logo de Youtube">
+            <img class="redes__img" src="./img/INS.png" alt="Logo de Instagram">
         </div>
         <div class="form">
             <h2 class="titulos__redes">Formulario de contacto</h2>
@@ -71,6 +171,6 @@
             </form> 
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
 </body>
 </html>
