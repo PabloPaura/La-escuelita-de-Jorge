@@ -89,7 +89,8 @@ ul {
 
 nav ul li a:hover {
   background-color: #daf7dc;
-  color: nav ul li a:hover primary; }
+  color: nav ul li a:hover primary; 
+}
 
 nav ul li a {
   font-family: 'Josefin Sans', sans-serif;

@@ -22,7 +22,7 @@ ul{
 
 nav ul li a:hover{
     background-color: $secondary;
-    color: &primary;
+    color: $primary;
     }
 nav ul li a{
     font-family: 'Josefin Sans', sans-serif;
