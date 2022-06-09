@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@100 & display=swap');
+/* @import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@100 & display=swap'); */
 
 /* Variables */
 
-:root {
+/* :root { */
     /* Colors */
 
-    --primary: #0d090a;
+    /* --primary: #0d090a;
     --secondary: #daf7dc;
     --alternative: #cc998d;
-    --opcional: #4D7C8A;
+    --opcional: #4D7C8A; */
 
     /* Spacing */ 
 
-    --spacing-medium: 4rem;
+    /* --spacing-medium: 4rem;
     --spacing-small: 2.5rem;
-    --Spacing-xsmall: 1rem;
+    --Spacing-xsmall: 1rem; */
     
     /* Font sizes*/
 
-    --text-large: 4.8em;
+    /* --text-large: 4.8em;
     --text-medium: 3.5em;
     --text-small: 2.4em;
-    --text-xsmall: 1.8em;
-}
+    --text-xsmall: 1.8em; */
+/* } */
 
-/* Normalize*/
+/* Normalize
 
 *{
     margin: 0;
@@ -99,12 +99,12 @@ p{
 
 .button:hover{
     transform: scale(1.2, 1.2);
-}
+} */
 
 
 /* ESTILOS HEADER */
 
-header{
+/* header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -140,19 +140,19 @@ nav ul li a{
 
 ul{
     list-style-type: none;
-}
+} */
 
-.galeria__img {
+/* .galeria__img {
     transition: all .3s linear;
 }
 
 .galeria__img:hover{
     transform: scale(1.1, 1.1);
-}
+} */
 
 /* ESTILOS MAIN*/
 
-#ribbon{
+/* #ribbon{
     background: linear-gradient(to bottom, #304352, #d7d2cc);   
 }
 
@@ -183,7 +183,7 @@ ul{
 
 /* Cards*/ 
 
-.card_border{
+/* .card_border{
     border: solid 3px var(--secondary);
     border-radius: 20px;
     overflow: hidden;
@@ -208,17 +208,17 @@ ul{
     color: var(--primary);
     font-size: var(--text-xsmall);
     font-family: 'Josefin Sans', sans-serif;
-}
+} */
 
 /* Video destacado */
 
-.destacado{
+/* .destacado{
     margin-bottom: var(--spacing-medium);
-}
+} */ 
 
 /* FOOTER */
 
-footer{
+/* footer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,19 +230,19 @@ footer{
 
 .redes{
     align-items: center;
-}
+} */
 
 /* ESTILOS ÁREAS */
 
-ol{
+/* ol{
     color: #daf7dc;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6em;
-}
+} */
 
 /*  GALERIA */
 
-section picture img{
+/* section picture img{
     width: 100%;
     height: 100%;
 }
@@ -290,11 +290,11 @@ section picture img{
 .galeria__img:nth-of-type(9){
     grid-column: 10 / 13;
     grid-row: 3;    
-}
+} */
 
 /* Responsive */
 
-@media screen and (max-width: 760px){
+/* @media screen and (max-width: 760px){
     header{
         display: flex;
         flex-direction: column;
@@ -330,4 +330,4 @@ section picture img{
         flex-direction: column;
         margin: 1rem;
     }
-}
+} */

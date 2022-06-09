@@ -1,0 +1,22 @@
+/* Externos */
+
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@100 & display=swap');
+
+/* Misc */
+
+@import './misc/variables';
+@import './misc/normalize'; 
+
+/* Partials */
+
+@import './partials/header';  
+@import './partials/footer';
+
+/* Pages */
+
+@import './pages/home';
+@import './pages/matematica';
+@import './pages/lengua';
+@import './pages/ciencias_naturales';
+@import './pages/galeria';
+
