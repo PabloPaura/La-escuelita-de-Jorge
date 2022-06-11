@@ -7,12 +7,14 @@ header{
     background: linear-gradient(to bottom, #304352, #d7d2cc); 
     opacity: 0.8; 
     align-items: center; 
-    font-size: $text-small; 
+    font-size: $text-small;   
 }
 
 header picture img{
     height: 100px;
-}
+} 
+
+
 
 nav ul{
     display: flex;
