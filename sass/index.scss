@@ -9,14 +9,18 @@
 
 /* Partials */
 
-@import './partials/header';  
+@import './partials/header';
 @import './partials/footer';
+
 
 /* Pages */
 
-@import './pages/home';
-@import './pages/matematica';
-@import './pages/lengua';
-@import './pages/ciencias_naturales';
+@import './pages/global';
 @import './pages/galeria';
+
+/* Responsive */
+
+@import './misc/responsive';
+
+
 

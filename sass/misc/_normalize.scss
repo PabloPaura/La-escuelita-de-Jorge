@@ -20,10 +20,6 @@ img{
     width: 100%;
 }
 
-.redes__img{
-    width: 50px;
-}
-
 .principal__img--areas{
     max-width: 40%;
 }
@@ -48,29 +44,4 @@ p{
     text-align: justify;
     color: $secondary;
     font-size: $text-xsmall;
-}
-
-.button{
-    background-color: $alternative;
-    border: solid white 2px;
-    font-family: 'Josefin Sans', sans-serif;
-    border-radius: 0.5rem;
-    color: $primary; 
-    transition: all .3s linear;   
-}
-
-.btn{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: $text-xsmall;
-    color: $primary;
-}
-
-.form-control{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: .7em;
-    color: $primary;
-}
-
-.button:hover{
-    transform: scale(1.2, 1.2);
 }

@@ -15,15 +15,12 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: primary;
+  background-color: #0d090a;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%234d7c8a' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-family: 'Josefin Sans', sans-serif; }
 
 img {
   width: 100%; }
-
-.redes__img {
-  width: 50px; }
 
 .principal__img--areas {
   max-width: 40%; }
@@ -47,29 +44,8 @@ p {
   color: #daf7dc;
   font-size: 1.8em; }
 
-.button {
-  background-color: #cc998d;
-  border: solid white 2px;
-  font-family: 'Josefin Sans', sans-serif;
-  border-radius: 0.5rem;
-  color: #0d090a;
-  transition: all .3s linear; }
-
-.btn {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8em;
-  color: #0d090a; }
-
-.form-control {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: .7em;
-  color: #0d090a; }
-
-.button:hover {
-  transform: scale(1.2, 1.2); }
-
 /* Partials */
-/* Header */
+/* Estilos header */
 header {
   display: flex;
   flex-direction: row;
@@ -82,15 +58,14 @@ header {
 header picture img {
   height: 100px; }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
 nav ul li a:hover {
   background-color: #daf7dc;
-  color: nav ul li a:hover primary; 
-}
+  color: #0d090a; }
 
 nav ul li a {
   font-family: 'Josefin Sans', sans-serif;
@@ -103,34 +78,17 @@ nav ul li a {
 ul {
   list-style-type: none; }
 
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  color: #0d090a; }
 
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
+.form-control {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .7em;
+  color: #0d090a; }
 
-/* Footer */
+/* Estilos footer */
 footer {
   display: flex;
   flex-direction: row;
@@ -143,39 +101,16 @@ footer {
 .redes {
   align-items: center; }
 
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
+.redes__img {
+  width: 50px; }
 
 /* Pages */
-/* ESTILOS MAIN*/
+/* Estilos generales */
+/* Ribon */
 #ribbon {
   background: linear-gradient(to bottom, #304352, #d7d2cc); }
 
-#ribon::after {
+#ribbon::after {
   content: '';
   background-color: transparent;
   display: block;
@@ -203,8 +138,9 @@ footer {
   border-radius: 20px;
   overflow: hidden;
   transition: all ease-in-out .2s; }
-  .card_border:hover {
-    transform: scale(1.05); }
+
+.card_border:hover {
+  transform: scale(1.05); }
 
 .card-title {
   font-family: 'Josefin Sans', sans-serif;
@@ -220,270 +156,21 @@ footer {
   font-size: 1.8em;
   font-family: 'Josefin Sans', sans-serif; }
 
-/* Video destacado */
-.destacado {
-  margin-bottom: 4rem; }
+/* Button*/
+.button {
+  background-color: #cc998d;
+  border: solid white 2px;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 0.5rem;
+  color: #0d090a;
+  transition: all .3s linear; }
 
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
-
-/* ESTILOS MAIN*/
-#ribbon {
-  background: linear-gradient(to bottom, #304352, #d7d2cc); }
-
-#ribon::after {
-  content: '';
-  background-color: transparent;
-  display: block;
-  height: 20px;
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  left: auto;
-  margin-top: -40px; }
-
-#separador {
-  background-color: #4D7C8A;
-  position: relative;
-  margin-top: -20px;
-  z-index: 10;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5); }
-
-#separador img {
-  position: relative;
-  margin-top: -30px; }
-
-/* Cards*/
-.card_border {
-  border: solid 3px #daf7dc;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all ease-in-out .2s; }
-  .card_border:hover {
-    transform: scale(1.05); }
-  .card_border__title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.4em;
-    color: #0d090a;
-    font-weight: bold; }
-  .card_border__text {
-    padding: 1rem;
-    margin: 4rem;
-    text-align: justify;
-    color: #0d090a;
-    font-size: 1.8em;
-    font-family: 'Josefin Sans', sans-serif; }
+.button:hover {
+  transform: scale(1.2, 1.2); }
 
 /* Video destacado */
 .destacado {
   margin-bottom: 4rem; }
-
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
-
-/* ESTILOS MAIN*/
-#ribbon {
-  background: linear-gradient(to bottom, #304352, #d7d2cc); }
-
-#ribon::after {
-  content: '';
-  background-color: transparent;
-  display: block;
-  height: 20px;
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  left: auto;
-  margin-top: -40px; }
-
-#separador {
-  background-color: #4D7C8A;
-  position: relative;
-  margin-top: -20px;
-  z-index: 10;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5); }
-
-#separador img {
-  position: relative;
-  margin-top: -30px; }
-
-/* Cards*/
-.card_border {
-  border: solid 3px #daf7dc;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all ease-in-out .2s; }
-  .card_border__:hover {
-    transform: scale(1.05); }
-  .card_border__title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.4em;
-    color: #0d090a;
-    font-weight: bold; }
-  .card_border__text {
-    padding: 1rem;
-    margin: 4rem;
-    text-align: justify;
-    color: #0d090a;
-    font-size: 1.8em;
-    font-family: 'Josefin Sans', sans-serif; }
-
-/* Video destacado */
-.destacado {
-  margin-bottom: 4rem; }
-
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
-
-/* ESTILOS MAIN*/
-#ribbon {
-  background: linear-gradient(to bottom, #304352, #d7d2cc); }
-
-#ribon::after {
-  content: '';
-  background-color: transparent;
-  display: block;
-  height: 20px;
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  left: auto;
-  margin-top: -40px; }
-
-#separador {
-  background-color: #4D7C8A;
-  position: relative;
-  margin-top: -20px;
-  z-index: 10;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5); }
-
-#separador img {
-  position: relative;
-  margin-top: -30px; }
-
-/* Cards*/
-.card_border {
-  border: solid 3px #daf7dc;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: all ease-in-out .2s; }
-  .card_border__:hover {
-    transform: scale(1.05); }
-  .card_border__title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.4em;
-    color: #0d090a;
-    font-weight: bold; }
-  .card_border__text {
-    padding: 1rem;
-    margin: 4rem;
-    text-align: justify;
-    color: #0d090a;
-    font-size: 1.8em;
-    font-family: 'Josefin Sans', sans-serif; }
-
-/* Video destacado */
-.destacado {
-  margin-bottom: 4rem; }
-
-/* Responsive */
-@media screen and (max-width: 760px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center; }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; }
-  .video {
-    align-content: center;
-    width: 320px;
-    height: 180px; }
-  .video {
-    width: 100%;
-    padding: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .redes {
-    flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
 
 /*  GALERIA */
 section picture img {
@@ -496,33 +183,42 @@ section picture img {
   grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
   height: auto; }
-  .galeria__img:nth-of-type(1) {
-    grid-column: 1 / 4;
-    grid-row: 1; }
-  .galeria__img:nth-of-type(2) {
-    grid-column: 4 / 10;
-    grid-row: 1; }
-  .galeria__img:nth-of-type(3) {
-    grid-column: 10 / 13;
-    grid-row: 1; }
-  .galeria__img:nth-of-type(4) {
-    grid-column: 1 / 7;
-    grid-row: 2; }
-  .galeria__img:nth-of-type(5) {
-    grid-column: 7 / 10;
-    grid-row: 2; }
-  .galeria__img:nth-of-type(6) {
-    grid-column: 10 / 13;
-    grid-row: 2; }
-  .galeria__img:nth-of-type(7) {
-    grid-column: 1 / 4;
-    grid-row: 3; }
-  .galeria__img:nth-of-type(8) {
-    grid-column: 4 / 10;
-    grid-row: 3; }
-  .galeria__img:nth-of-type(9) {
-    grid-column: 10 / 13;
-    grid-row: 3; }
+
+.galeria__img:nth-of-type(1) {
+  grid-column: 1 / 4;
+  grid-row: 1; }
+
+.galeria__img:nth-of-type(2) {
+  grid-column: 4 / 10;
+  grid-row: 1; }
+
+.galeria__img:nth-of-type(3) {
+  grid-column: 10 / 13;
+  grid-row: 1; }
+
+.galeria__img:nth-of-type(4) {
+  grid-column: 1 / 7;
+  grid-row: 2; }
+
+.galeria__img:nth-of-type(5) {
+  grid-column: 7 / 10;
+  grid-row: 2; }
+
+.galeria__img:nth-of-type(6) {
+  grid-column: 10 / 13;
+  grid-row: 2; }
+
+.galeria__img:nth-of-type(7) {
+  grid-column: 1 / 4;
+  grid-row: 3; }
+
+.galeria__img:nth-of-type(8) {
+  grid-column: 4 / 10;
+  grid-row: 3; }
+
+.galeria__img:nth-of-type(9) {
+  grid-column: 10 / 13;
+  grid-row: 3; }
 
 .galeria__img {
   transition: all .3s linear; }
@@ -530,6 +226,7 @@ section picture img {
 .galeria__img:hover {
   transform: scale(1.1, 1.1); }
 
+/* Responsive */
 /* Responsive */
 @media screen and (max-width: 760px) {
   header {
@@ -551,8 +248,8 @@ section picture img {
     padding: 1rem; } }
 
 @media screen and (max-width: 480px) {
+  .titulos__redes {
+    display: none; }
   .redes {
     flex-direction: column;
-    margin: 1rem; }
-    .redes__redes {
-      display: none; } }
+    margin: 1rem; } }
