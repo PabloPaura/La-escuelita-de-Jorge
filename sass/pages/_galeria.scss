@@ -10,10 +10,8 @@ section picture img{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
-    height: auto;   
-}
-
-.galeria__img:nth-of-type(1){
+    height: auto;
+    .galeria__img:nth-of-type(1){
     grid-column: 1 / 4;
     grid-row: 1;
 }
@@ -48,7 +46,10 @@ section picture img{
 .galeria__img:nth-of-type(9){
     grid-column: 10 / 13;
     grid-row: 3;    
+}   
 }
+
+
 
 .galeria__img {
     transition: all .3s linear;
