@@ -19,7 +19,7 @@
 }
 
 #separador{
-    background-color: $opcional;
+    background-color: map-get($colors, opcional);
     position: relative;
     margin-top: -20px;
     z-index: 10;
@@ -34,7 +34,7 @@
 /* Cards*/ 
 
 .card_border{
-    border: solid 3px $secondary;
+    border: solid 3px map-get($colors, secondary);
     border-radius: 20px;
     overflow: hidden;
     transition: all ease-in-out .2s;
@@ -47,7 +47,7 @@
 .card-title{
     font-family: 'Josefin Sans', sans-serif;
     font-size: $text-small;
-    color: $primary;
+    color: map-get($colors, primary);
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@
     padding: $Spacing-xsmall;
     margin: $spacing-medium;
     text-align: justify;
-    color: $primary;
+    color: map-get($colors, primary);
     font-size: $text-xsmall;
     font-family: 'Josefin Sans', sans-serif;
 } 
@@ -63,11 +63,11 @@
 /* Button*/
 
 .button{
-    background-color: $alternative;
+    background-color: map-get($colors, alternative);
     border: solid white 2px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 0.5rem;
-    color: $primary; 
+    color: map-get($colors, primary); 
     transition: all .3s linear;   
 }
 

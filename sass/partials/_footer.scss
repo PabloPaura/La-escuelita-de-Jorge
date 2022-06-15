@@ -1,13 +1,14 @@
 /* Estilos footer */
 
 footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex (row, space-between, center, 1rem)
     align-content: center;
-    justify-content: space-between;
     background: linear-gradient(to top, #304352, #d7d2cc);
-    opacity: 0.8;   
+    opacity: 0.8; 
+     
+}
+.titulos__redes{
+    color: map-get($colors, primary); 
 }
 
 .redes{

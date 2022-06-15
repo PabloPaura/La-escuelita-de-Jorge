@@ -1,15 +1,13 @@
 /* Estilos header */
 
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex (row, space-between, center, 1rem)
     background: linear-gradient(to bottom, #304352, #d7d2cc); 
-    opacity: 0.8; 
-    align-items: center; 
+    opacity: 0.8;
     font-size: $text-small;   
 }
-
+    
+    
 header picture img{
     height: 100px;
 } 
@@ -17,20 +15,18 @@ header picture img{
 
 
 nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex (row, space-between, center, 1rem)
 }
 
 nav ul li a:hover{
-    background-color: $secondary;
-    color: $primary;
+    background-color: map-get($colors, secondary);
+    color: map-get($colors, primary);
 }
 
 nav ul li a{
     font-family: 'Josefin Sans', sans-serif;
     font-size: $text-small;
-    color: $secondary;
+    color: map-get($colors, secondary);
     padding: 1rem 2rem;
     text-decoration-line: none; 
     transition: all .3s ease-in-out;  
@@ -43,13 +39,17 @@ ul{
 .btn{
     font-family: 'Josefin Sans', sans-serif;
     font-size: $text-xsmall;
-    color: $primary;
+    color: map-get($colors, primary);
+}
+
+.btn{
+    @extend .button;
 }
 
 .form-control{
     font-family: 'Josefin Sans', sans-serif;
     font-size: .7em;
-    color: $primary;
+    color: map-get($colors, primary);
 }
 
 

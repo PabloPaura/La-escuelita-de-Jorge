@@ -1,11 +1,18 @@
 /*  Variables */
 
 /* Colors */
+$colors: (
+    primary: #0d090a,
+    secondary: #daf7dc,
+    alternative: #cc998d,
+    opcional: #4D7C8A
+);
 
-$primary: #0d090a;
-$secondary: #daf7dc;
-$alternative: #cc998d;
-$opcional: #4D7C8A;
+@each $color, $value in $colors {
+    #{$color} {
+        color: #{$value}
+    }
+}
 
 /* Spacing */ 
 

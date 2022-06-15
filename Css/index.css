@@ -3,6 +3,18 @@
 /* Misc */
 /*  Variables */
 /* Colors */
+primary {
+  color: #0d090a; }
+
+secondary {
+  color: #daf7dc; }
+
+alternative {
+  color: #cc998d; }
+
+opcional {
+  color: #4D7C8A; }
+
 /* Spacing */
 /* Font sizes*/
 /* Normalize*/
@@ -50,9 +62,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   background: linear-gradient(to bottom, #304352, #d7d2cc);
   opacity: 0.8;
-  align-items: center;
   font-size: 2.4em; }
 
 header picture img {
@@ -61,7 +74,9 @@ header picture img {
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; }
 
 nav ul li a:hover {
   background-color: #daf7dc;
@@ -92,11 +107,15 @@ ul {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
   background: linear-gradient(to top, #304352, #d7d2cc);
   opacity: 0.8; }
+
+.titulos__redes {
+  color: #0d090a; }
 
 .redes {
   align-items: center; }
@@ -157,7 +176,7 @@ footer {
   font-family: 'Josefin Sans', sans-serif; }
 
 /* Button*/
-.button {
+.button, .btn {
   background-color: #cc998d;
   border: solid white 2px;
   font-family: 'Josefin Sans', sans-serif;
@@ -165,7 +184,7 @@ footer {
   color: #0d090a;
   transition: all .3s linear; }
 
-.button:hover {
+.button:hover, .btn:hover {
   transform: scale(1.2, 1.2); }
 
 /* Video destacado */
