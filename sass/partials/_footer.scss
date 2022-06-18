@@ -1,7 +1,7 @@
 /* Estilos footer */
 
 footer{
-    @include flex (row, space-between, center, 1rem)
+    @include flex (row, space-between, center, 1rem);
     align-content: center;
     background: linear-gradient(to top, #304352, #d7d2cc);
     opacity: 0.8; 
@@ -17,4 +17,5 @@ footer{
 
 .redes__img{
     width: 50px;
+    margin: 1rem;
 }
