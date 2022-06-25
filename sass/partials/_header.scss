@@ -1,18 +1,15 @@
 /* Estilos header */
 
 header{
-    @include flex (row, space-between, center, 1rem)
+    @include flex (row, space-between, center, 1rem);
     background: linear-gradient(to bottom, #304352, #d7d2cc); 
     opacity: 0.8;
     font-size: $text-small;   
 }
-    
-    
+       
 header picture img{
     height: 100px;
 } 
-
-
 
 nav ul{
     @include flex (row, space-between, center, 1rem)
@@ -42,8 +39,9 @@ ul{
     color: map-get($colors, primary);
 }
 
-.btn{
+.btn-sm{
     @extend .button;
+    height: 5rem;
 }
 
 .form-control{

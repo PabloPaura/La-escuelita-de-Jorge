@@ -60,6 +60,16 @@
     font-family: 'Josefin Sans', sans-serif;
 } 
 
+.col-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_border{
+    flex-grow: 1;
+}
+
 /* Button*/
 
 .button{
@@ -67,7 +77,8 @@
     border: solid white 2px;
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 0.5rem;
-    color: map-get($colors, primary); 
+    color: map-get($colors, primary);
+    padding: $Spacing-xsmall; 
     transition: all .3s linear;   
 }
 
@@ -80,3 +91,15 @@
 .destacado{
     margin-bottom: $spacing-medium;
 }  
+
+.form__continer{
+    padding: 1rem;
+}
+.form__button{
+    background-color: map-get($colors, alternative);
+    border: solid white 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 0.5rem;
+    color: map-get($colors, primary);
+    padding: $Spacing-xsmall; 
+}

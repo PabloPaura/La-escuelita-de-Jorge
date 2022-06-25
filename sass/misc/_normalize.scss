@@ -44,4 +44,10 @@ p{
     text-align: justify;
     color: map-get($colors, secondary);
     font-size: $text-xsmall;
+    line-height: $spacing-medium;
+}
+
+.parrafo__inicio{
+    width: 60%;
+    margin: auto;
 }

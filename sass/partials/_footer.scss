@@ -13,9 +13,16 @@ footer{
 
 .redes{
     align-items: center;
+    &__img{
+        width: 50px;
+        margin: 1rem;
+        transition: all .3s linear;
+    }
+    &__img:hover{
+        transform: scale(1.2, 1.2);
+    }
 } 
 
-.redes__img{
-    width: 50px;
-    margin: 1rem;
-}
+
+
+

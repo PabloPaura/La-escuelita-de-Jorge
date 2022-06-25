@@ -7,6 +7,7 @@
     <meta name="description" content="Un sitio educativo con actividades muy divertidas, juegos matemáticos y videos muy interesantes y muy divertidos">
     <meta name="keywords" content="EDUCACION PRIMARIA, ACTIVIDADES ESCOLARES, MATEMÁTICA, TAREAS, JUEGOS MATEMÁTICOS">
     <title>La escuelita de Jorge | Matemática</title>
+    <link rel="shortcut icon" href="../img/fav-jorge-.ico" type="image/x-icon">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -43,7 +44,7 @@
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                <button class="btn-sm" type="submit">Buscar</button>
               </form>
           </div>
         </header>
@@ -53,7 +54,7 @@
 
     <main class="main container-fluid">
       <h1 class="text-center animate__animated animate__bounceInLeft">Matemática</h1>
-      <p>
+      <p class="parrafo__inicio">
           Bienvenido a la sección Matemática. Aquí encontrarás tareas, videos y consejos útiles para poder realizar todas las actividades que veas en el cole. Junto a Jorge y sus locuras podrás aprender divirtiéndote en el camino. No te olvides que además de las tareas destacadas, podes acceder a todas las tareas con el botón "más tareas". ¡Qué disfrutes y te esperamos de vuelta 
       </p>
       <div>
@@ -143,15 +144,20 @@
     <footer class="container-fluid">
         <div class="redes">
             <h2 class="titulos__redes">Redes sociales</h2>
-            <img class="redes__img" src="../img/YT.png" alt="Logo de Youtube">
-            <img class="redes__img" src="../img/INS.png" alt="Logo de Instagram">
+            <a href="https://www.youtube.com/channel/UC3O4XSY9LFRKzwqr0c5apIg" target="_blank">
+              <img class="redes__img" src="../img/YT.png" alt="Logo de Youtube">
+            </a>
+            <a href="https://classroom.google.com/" target="_blank">
+              <img class="redes__img" src="../img/clas.png" alt="Logo de Instagram">
+            </a>            
+            
         </div>
         <div class="form">
             <h2 class="titulos__redes">Formulario de contacto</h2>
             <form action="../index.js" method="post">
-                <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-                <input type="email" name="email" placeholder="email" required>
-                <input type="submit" value="Enviar">
+                <input type="text" class="form__continer" name="nombre" placeholder="Nombre y apellido" required>
+                <input type="email" class="form__continer" name="email" placeholder="email" required>
+                <input type="submit" class="form__button" value="Enviar">
             </form> 
         </div>
     </footer>
